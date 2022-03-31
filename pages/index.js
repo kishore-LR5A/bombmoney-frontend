@@ -99,10 +99,77 @@ export default function Home() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
-
+      {/* section 4: Bonds */}
+      <div className="mx-auto my-5 flex flex-col bg-[#202543] bg-opacity-50 space-y-1 w-[1048px] h-[186px] justify-start items-start rounded-md p-[22px]">
+        <div className="flex flex-col justify-center items-start space-y-2">
+          {/* upper */}
+          <div className="flex items-center justify-start space-x-1">
+            <img
+              className="w-[48px] h-[48px] "
+              src="summary/bbond.svg"
+              alt=""
+            />
+            <div className="flex flex-col items-start justify-start">
+              <p className="font-bold text-[22px]">Bonds</p>
+              <p className="text-[14px]">
+                BBOND can be purchased only on contraction periods, when TWAP of
+                BOMB is below 1
+              </p>
+            </div>
+          </div>
+          {/* lower */}
+          <div className="flex justify-between items-center space-x-20">
+            {/* left */}
+            <div className="flex justify-center items-center">
+              <div className="flex space-x-10 justify-center items-center">
+                <div className="flex flex-col space-y-1">
+                  <p className="text-[16px]">Current Price: (Bomb)^2</p>
+                  <p className="font-bold text-[22px]">BBond = 6.2872 BTCB</p>
+                </div>
+                <div className="flex flex-col justify-center items-center">
+                  <p>Available to redeem:</p>
+                  <div className="flex justify-center items-center">
+                    <img src="summary/bbond.svg" alt="" />
+                    456
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* right */}
+            <div className=" flex flex-col">
+              {/* upper */}
+              <div className="flex justify-between items-center">
+                <div>
+                  <p className="text-[16px]">Purchase BBond</p>
+                  <p className="text-[16px]">Bomb is over peg</p>
+                </div>
+                <button className="flex border-1 border-white rounded-lg  w-[107px] h-[28px] justify-between">
+                  Purchase
+                  <div className="bg-white w-[20px] h-[20px] rounded-full flex items-center justify-center">
+                    <img src="icons/shopping-cart.svg" alt="" />
+                  </div>
+                </button>
+              </div>
+              <hr className="border-b-[0.5px] text-[#C3C5CB] w-[417px]" />
+              {/* lower */}
+              <div className="flex justify-between items-center">
+                <div>
+                  <p className="text-[16px]">Redeem Bomb</p>
+                  <p className="text-[16px] invisible">Bomb is over peg</p>
+                </div>
+                <button className="flex border-1 border-white rounded-lg  w-[107px] h-[28px] justify-between">
+                  Redeem
+                  <div className="bg-white w-[20px] h-[20px] rounded-full flex items-center justify-center">
+                    <img src="icons/arrow-down-circle.svg" alt="" />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
