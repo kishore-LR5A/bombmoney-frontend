@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Bedroom from "./components/Bedroom";
 import BombFarms from "./components/BombFarms";
 import PicTextNum from "./components/PicTextNum";
 import Table from "./components/Table";
@@ -103,6 +104,43 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* section 2 */}
+      <div className="flex space-x-2">
+        {/* right */}
+        <div className="flex flex-col space-y-2">
+          {/* link */}
+          <div className="flex justify-end">
+            <a href="/">
+              <img src="Group 2904.svg" alt="" />
+            </a>
+          </div>
+          <div className="w-[646px] h-[40px] bg-[#00ADE8] border-[0.3px] border-[#E41A1A] flex justify-center items-center text-[24px] font-bold ">
+            Invest Now
+          </div>
+          <div className="flex space-x-2">
+            {/* discord */}
+            <div className="flex space-x-1 w-[317px] h-[40px] items-center justify-center bg-gray-400 border-[0.3px] border-[#728CDF]">
+              <div className="rounded-full bg-white w-[30px] h-[30px] flex items-center justify-center">
+                <img className="w-[28px] h-[28px] " src="discord.svg" alt="" />
+              </div>
+              <p className="text-[18px] font-bold">Chat on Discord</p>
+            </div>
+            {/* read docs */}
+            <div className="flex space-x-1 w-[317px] h-[40px] items-center justify-center bg-gray-400 border-[0.3px] border-[#728CDF]">
+              <div className="rounded-full bg-white w-[30px] h-[30px] flex items-center justify-center">
+                <img className="w-[23px] h-[23px] " src="docs.svg" alt="" />
+              </div>
+              <p className="text-[18px] font-bold">Read Docs</p>
+            </div>
+          </div>
+          {/* Boardroom */}
+          <Bedroom />
+        </div>
+        {/* left */}
+        <div className="mx-auto flex bg-[#202543] bg-opacity-50 space-x-2 w-[382px] h-[336px] justify-start items-start rounded-md">
+          <p className="text-[22px] pl-[19px] pt-[8px]">Latest News</p>
+        </div>
+      </div>
 
       {/* section 3 */}
       <div className="mx-auto my-5 flex flex-col bg-[#202543] bg-opacity-50 space-y-1 w-[1048px] h-[380px] justify-center items-start rounded-md p-[22px]">
@@ -120,34 +158,7 @@ export default function Home() {
         {/* middel */}
         <div className="flex flex-col">
           {/* upper */}
-          <div className="flex">
-            <div className="flex justify-start items-center space-x-4">
-              <img
-                className="w-[33px] h-[33px] "
-                src="pictextnum/bomb-bitcoin-LP.svg"
-                alt=""
-              />
-              <div className="flex flex-col justify-center items-center space-y-1">
-                <div className="flex justify-between w-[950px]">
-                  <div className=" flex space-x-4">
-                    <p className="text-22 font-bold">BOMB-BTCB </p>
-                    {/* button or div */}
-                    <div className="bg-[#00E8A2] bg-opacity-50 rounded-md px-2">
-                      Recommended
-                    </div>
-                  </div>
-                  <p className="flex items-end">
-                    TVL:{" "}
-                    <span className="text-[16px] font-semibold ">
-                      $1,008,430
-                    </span>
-                  </p>
-                </div>
-                {/* horizontal line */}
-                <hr className="border border-b-[0.5px] text-[#C3C5CB] w-[950px]" />
-              </div>
-            </div>
-          </div>
+
           {/* lower */}
           <BombFarms />
           <hr className="border border-b-[0.5px] text-[#C3C5CB] w-[1000px] mt-2" />

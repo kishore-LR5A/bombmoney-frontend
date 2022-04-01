@@ -1,10 +1,11 @@
 import React from "react";
 import TextImage from "./TextImage";
 
-function BombFarms() {
+function Bedroom() {
   return (
-    <div>
+    <div className="w-[646px] h-[202px]  bg-[#202543] bg-opacity-50 rounded-md pl-[16px]">
       {/* upper */}
+      {/* mx-auto flex flex-col bg-[#202543] bg-opacity-50 space-y-1 justify-center items-start rounded-md py-[10px] */}
       <div className="flex pt-[20px]">
         <div className="flex justify-start items-center space-x-4">
           <img
@@ -13,7 +14,7 @@ function BombFarms() {
             alt=""
           />
           <div className="flex flex-col justify-center items-center space-y-1">
-            <div className="flex justify-between w-[950px]">
+            <div className="flex justify-between w-[542px]">
               <div className=" flex space-x-4">
                 <p className="text-22 font-bold">BOMB-BTCB </p>
                 {/* button or div */}
@@ -27,15 +28,15 @@ function BombFarms() {
               </p>
             </div>
             {/* horizontal line */}
-            <hr className="border border-b-[0.5px] text-[#C3C5CB] w-[950px]" />
+            <hr className="border border-b-[0.5px] text-[#C3C5CB] w-[542px]" />
           </div>
         </div>
       </div>
 
       {/* lower */}
-      <div className="flex justify-between pt-[10px]">
+      <div className="flex justify-between pt-[10px] w-[605px] ">
         {/* left */}
-        <div className="flex space-x-20 pt-2">
+        <div className="flex space-x-10 pt-2">
           <div className="flex flex-col space-y-1">
             <p>Daily Returns:</p>
             <p>2%</p>
@@ -60,17 +61,25 @@ function BombFarms() {
           </div>
         </div>
         {/* right */}
-        <div className="flex items-end justify-center">
+        <div className="flex flex-col space-y-2 items-center justify-center w-[230px] ">
           {/* 3 same elements should be made as a component */}
           <div className="flex space-x-2">
             <TextImage pic="pictextnum/bomb-bitcoin-LP.svg" t="Deposit" />
             <TextImage pic="pictextnum/bomb-bitcoin-LP.svg" t="Withdraw" />
-            <TextImage pic="pictextnum/bomb-bitcoin-LP.svg" t="Claim Rewards" />
           </div>
+          <div className="border border-white rounded-full flex items-center justify-center space-x-2 px-3 w-[217px]">
+            <p>Deposit</p>
+            <img
+              className="w-[18px] h-[18px] "
+              src="pictextnum/bomb-bitcoin-LP.svg"
+              alt=""
+            />
+          </div>
+          {/* <TextImage pic="pictextnum/bomb-bitcoin-LP.svg" t="Claim Rewards" /> */}
         </div>
       </div>
     </div>
   );
 }
 
-export default BombFarms;
+export default Bedroom;
