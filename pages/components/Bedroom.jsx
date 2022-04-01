@@ -32,7 +32,10 @@ function Bedroom() {
           </div>
         </div>
       </div>
-
+        {/* middle */}
+        <div className="flex justify-end items-center pr-[35px] pt-[10px]">
+        Total Staked: <span><img src="summary/bshares.svg" alt="" /></span> 7232
+        </div>
       {/* lower */}
       <div className="flex justify-between pt-[10px] w-[605px] ">
         {/* left */}

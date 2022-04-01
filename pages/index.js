@@ -90,15 +90,15 @@ export default function Home() {
               <div className="flex flex-col space-y-1">
                 <PicTextNum
                   pic="pictextnum/bomb-bitcoin-LP.svg"
-                  t="Bomb"
+                  t="Bomb-BTCB:"
                   n="17"
                 />
                 <PicTextNum
                   pic="pictextnum/bshare-bnb-LP.svg"
-                  t="BShare"
+                  t="Bshare-BNB:"
                   n="17"
                 />
-                <PicTextNum t="BBomb" n="17" />
+                <PicTextNum pic ="" t="Others:" n="17" />
               </div>
             </div>
           </div>
@@ -187,7 +187,7 @@ export default function Home() {
             </div>
           </div>
           {/* lower */}
-          <div className="flex justify-between items-center space-x-20">
+          <div className="flex justify-between items-center space-x-20 w-[950px]">
             {/* left */}
             <div className="flex justify-center items-center">
               <div className="flex space-x-10 justify-center items-center">
@@ -198,8 +198,8 @@ export default function Home() {
                 <div className="flex flex-col justify-center items-center">
                   <p>Available to redeem:</p>
                   <div className="flex justify-center items-center">
-                    <img src="summary/bbond.svg" alt="" />
-                    456
+                    <img className="w-[39px] h-[39px] " src="summary/bbond.svg" alt="" />
+                    <p className="text-[36px]">456</p>
                   </div>
                 </div>
               </div>
@@ -209,29 +209,21 @@ export default function Home() {
               {/* upper */}
               <div className="flex justify-between items-center">
                 <div>
-                  <p className="text-[16px]">Purchase BBond</p>
+                  <p className="text-[16px] font-bold">Purchase BBond</p>
                   <p className="text-[16px]">Bomb is over peg</p>
                 </div>
-                <button className="flex border-1 border-white rounded-lg  w-[107px] h-[28px] justify-between">
-                  Purchase
-                  <div className="bg-white w-[20px] h-[20px] rounded-full flex items-center justify-center">
-                    <img src="icons/shopping-cart.svg" alt="" />
-                  </div>
-                </button>
+                {/* div or button */}
+                <TextImage pic="icons/shopping-cart.svg" t="Purchase" />
               </div>
               <hr className="border-b-[0.5px] text-[#C3C5CB] w-[417px]" />
               {/* lower */}
               <div className="flex justify-between items-center">
                 <div>
-                  <p className="text-[16px]">Redeem Bomb</p>
+                  <p className="text-[16px] font-bold">Redeem Bomb</p>
                   <p className="text-[16px] invisible">Bomb is over peg</p>
                 </div>
-                <button className="flex border-1 border-white rounded-lg  w-[107px] h-[28px] justify-between">
-                  Redeem
-                  <div className="bg-white w-[20px] h-[20px] rounded-full flex items-center justify-center">
-                    <img src="icons/arrow-down-circle.svg" alt="" />
-                  </div>
-                </button>
+                {/* div or button */}
+                <TextImage pic="icons/arrow-down-circle.svg" t="Redeem" />
               </div>
             </div>
           </div>
